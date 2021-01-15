@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Comparison</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+ <div class="slide slide1"></div>
+ <div class="slide slide2" id="slide"></div>
+</div>
+
+<script>
+var slide = document.getElementById('slide');
+window.onmousemove = function(e){
+    var x = e.clientX;
+    slide.style.left = x+'px';
+}
+
+</script>
+
+</body>
+</html>
